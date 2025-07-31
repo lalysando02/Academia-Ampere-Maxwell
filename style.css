@@ -1,0 +1,530 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-image: url(Imagenes/fondo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: linear-gradient(180deg, white, #f8f9f9);
+  color: rgb(37, 21, 86);
+  text-align: center;
+  min-height: 100vh;
+  background-image: url(Imagenes/imagen3.jpg);
+}
+
+header{
+  padding: 10px 0;
+}
+
+nav{
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+    width: 100px;
+    border-radius: 5px;
+}
+.links{
+    flex: 1;
+    text-align: right;
+}
+
+.links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.links ul li a{
+    color: #f7f9ef;
+    text-decoration: none;
+    font-size: 20px; 
+    margin: 0 3px;
+    padding: 4px 6px;
+
+}
+
+.links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+}
+
+.links ul li:hover::after{
+    width: 100%;
+}
+
+.pantalla-completa {
+  display: flex;
+  justify-content: flex-end; /* Alinea a la derecha */
+  width: 100vw;
+  height: 100vh; /* O toda la altura que necesites */
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  height: 105vh;
+  width: 110vw;
+}
+
+
+
+.hero {
+  padding: 60px 20px;
+}
+
+.roar-title {
+  font-size: 90px;
+  font-weight: bold;
+  color: #dec874;
+  letter-spacing: 10px;
+  margin-bottom: 20px;
+}
+
+.slogan {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.whatsapp-button img {
+  width: 20px;
+  height: 20px;
+}
+
+/*footer*/
+
+.footer {
+  background: #1e1e2f;
+  color: white;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 15px;
+}
+
+
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: #f0f0f0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  font-size: 0.95em;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+.footer-section ul li strong {
+  color: #f0f0f0;
+}
+
+.footer-section a {
+  color: #eff4f1; /* WhatsApp green */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+
+
+.footer-section a:hover {
+  color: #b96def;
+}
+.footer-section p i {
+  display: block;
+  margin-top: 15px;
+  font-style: italic;
+  font-weight: 600;
+  color: #ffffff;
+}
+.footer-logo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 120px;
+  height: auto;
+  opacity: 0.9;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.05);
+}
+
+.footer iframe {
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  height: 200px;
+}
+
+.footer-rights {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+}
+
+.footer-section p i{
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #aaa;
+  
+}
+
+.footer-redes a{
+ font-size: 40px;
+ filter: drop-shadow(0 0 2px #fff);
+ margin-right: 12px;
+ transition: transform 0.3s ease, color 0.3s ease;
+
+  
+}
+
+
+/*quienessomos*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap');
+
+.bloque-institucional {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 5%;
+  background: linear-gradient(to bottom, #e9ecef, #f8f9fa);
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  border-left: 8px solid #0077cc; /* color institucional */
+  padding: 30px;
+  flex: 1 1 300px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #1e2a38;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.tarjeta h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #0077cc;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  border-radius: 2px;
+}
+
+.tarjeta p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.mision {
+  border-left-color: #17a2b8;
+}
+
+.vision {
+  border-left-color: #28a745;
+}
+
+/*NUESTRSO CICLOS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Open+Sans&display=swap');
+
+.ciclos-academicos {
+  padding: 60px 5%;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.titulo-ciclos {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #28e153;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.seccion-ciclos {
+  background: linear-gradient(135deg, #eef1f6, #ffffff); /* O el mismo fondo que uses en el body */
+  padding: 60px 5% 40px;
+  font-family: 'Montserrat', sans-serif;
+  color: #26bc69;
+}
+
+
+.caja-ciclos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  border-radius: 0cap;
+}
+
+.ciclo {
+  background-color: #784aec;
+  width: 280px;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(31, 192, 42, 0.1);
+  color: #f7f7fb;
+  font-family: 'Montserrat', sans-serif;
+  transition: transform 0.3s ease;
+  text-align: left;
+}
+
+.ciclo:hover {
+  transform: scale(1.04);
+}
+
+.ciclo h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.contacto-seccion {
+
+  padding: 40px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.contacto-seccion h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.formulario-contacto {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #f3f3f3;
+  color: #333;
+}
+
+.formulario-contacto button {
+  background-color: #00d4ff;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #00b0d0;
+}
+
+@media (max-width: 600px) {
+  .formulario-contacto input,
+  .formulario-contacto textarea {
+    font-size: 0.9em;
+  }
+}
+
+
+
+
+/*contactanos*/
+
+.menu-conocenos {
+  padding: 60px 5%;
+  background: linear-gradient(to bottom, #f1f4f9, #ffffff);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.menu-conocenos h2 {
+  font-size: 2.2rem;
+  color: #1e2a38;
+  margin-bottom: 40px;
+}
+
+.tarjetas-conocenos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.tarjeta-conocenos {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-conocenos:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta-conocenos img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  max-height: 200px;
+}
+
+.tarjeta-conocenos h3 {
+  margin-top: 15px;
+  font-size: 1.4rem;
+  color: #0077cc;
+}
+
+.tarjeta-conocenos p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 8px;
+}
+
+.menu-conocenos-video {
+  padding: 60px 5%;
+  background: linear-gradient(to bottom, #eef1f6, #ffffff);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.menu-conocenos-video h2 {
+  font-size: 2.2rem;
+  color: #1e2a38;
+  margin-bottom: 40px;
+}
+
+.tarjetas-video {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.tarjeta-video {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-video:hover {
+  transform: scale(1.03);
+}
+
+.video-wrapper {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.tarjeta-video h3 {
+  font-size: 1.3rem;
+  color: #0077cc;
+  margin: 10px 0;
+}
+
+.tarjeta-video p {
+  font-size: 0.95rem;
+  color: #444;
+}
